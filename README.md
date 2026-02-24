@@ -56,7 +56,7 @@ Same process, now varying the basis set.
 
 ---
 
-### How bond length is extracted
+### Bond length calculation
 
 After optimization, atomic positions are read directly:
 
@@ -79,15 +79,6 @@ Mean over all 4 C-H distances → single bond length value.
 | Basis set | STO-3G | 0.25% |
 
 Best pair for methane geometry optimization: **DFT-B3LYP / STO-3G**
-
----
-
-### Stack
-
-- [ASE](https://wiki.fysik.dtu.dk/ase/) — molecule builder, optimizer interface, position extraction
-- [NWChem](https://nwchemgit.github.io/) — QM engine (SCF, MP2, DFT)
-- BFGS optimizer — convergence criterion: `fmax = 0.05 eV/Å`
-- Each theory+basis combo gets its own output folder under `~/QE/theory_scan/`
 
 ---
 
